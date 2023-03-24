@@ -99,7 +99,6 @@ export class Configuration {
         }
         this.baseOptions.headers = {
             'User-Agent': `OpenAI/NodeJS/${packageJson.version}`,
-            'Authorization': `Bearer ${this.apiKey}`,
             ...this.baseOptions.headers,
         }
         if (this.organization) {
